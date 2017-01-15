@@ -1,7 +1,6 @@
 import os
 import glob
 import time
-#import RPi.GPIO as GPIO
 from bluetooth import *
 
 #os.system('modprobe w1-gpio')
