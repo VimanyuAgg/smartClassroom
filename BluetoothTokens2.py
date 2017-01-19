@@ -25,15 +25,16 @@ def read_tokens():
 import os
 import glob
 import time
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 from bluetooth import *
 
-os.system('modprobe w1-gpio')
-os.system('modprobe w1-therm')
+#os.system('modprobe w1-gpio')
+#os.system('modprobe w1-therm')
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(17, GPIO.OUT)
+#GPIO.setmode(GPIO.BCM)
+#GPIO.setup(17, GPIO.OUT)
 
+#Creating the server bluetooth-sockets
 server_sock = BluetoothSocket(RFCOMM)
 server_sock.bind(("", PORT_ANY))
 server_sock.listen(1)
